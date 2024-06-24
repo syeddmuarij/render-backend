@@ -9,8 +9,8 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         # Connect to DynamoDB
         dynamodb = boto3.resource('dynamodb', region_name='eu-north-1',
-                                  aws_access_key_id='AKIA53CEK2BCC7KELOWK',
-                                  aws_secret_access_key='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')
+                                  aws_access_key_id='AKIA53CEK2BCGPA6WDO2',
+                                  aws_secret_access_key='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')
         table = dynamodb.Table('cgms')
 
         # Fetch data from DynamoDB and insert into Django model
